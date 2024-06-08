@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+}
+img{
+    border-radius: 50%;
+}
+.principal{
+    text-align: center;
+}
+#imagenMono{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
