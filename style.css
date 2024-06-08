@@ -1,14 +1,64 @@
-body{
-    background-color: aqua;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-img{
-    border-radius: 50%;
-}
+
+
 .principal{
     text-align: center;
+    margin-top: 5vh;
 }
+
+.content{
+    background-color: peru;
+}
+
+.imagenes{
+    width: 30%;
+    margin: 1.4%;
+    margin-left: 10px;
+}
+
 #imagenMono{
-    display: block;
+    border-radius: 50%;
+    width: 35vh;
+    height: 35vh;
     align-items: center;
     margin: 0 auto;
+}
+
+#portfolio{
+    text-align: center;
+}
+
+#portfolio h2{
+    margin: 0px auto;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .principal {
+        margin-top: 10vh;
+        flex-direction: row;
+    }
+
+    #imagenMono {
+        width: 25vh;
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .principal {
+        margin-top: 5vh;
+        flex-direction: row;
+    }
+
+    #imagenMono {
+        width: 15vh;
+        height: 15vh;
+    }
 }
