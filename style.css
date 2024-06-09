@@ -1,26 +1,57 @@
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-
-.principal{
+footer{
+    background-color: orangered;
+}
+h2 {
+    text-align: center;
+}
+.column{
+    flex: 1;
+    gap: 20px;
+}
+.column a svg{
+    width: 30px;
+    height: auto;
+}
+.container{
+    display: flex;
+}
+.principal {
     text-align: center;
     margin-top: 5vh;
 }
 
-.content{
-    background-color: peru;
+.content {
+    background-color: orangered;
 }
 
-.imagenes{
+.imagenes {
     width: 30%;
     margin: 1.4%;
     margin-left: 10px;
 }
 
-#imagenMono{
+.informacion {
+    text-align: center;
+}
+
+.mb-3 {
+    width: 50vh;
+    height: auto;
+    margin-left: 10vh;
+}
+
+.btn {
+    margin-left: 10vh;
+}
+
+#imagenMono {
     border-radius: 50%;
     width: 35vh;
     height: 35vh;
@@ -28,37 +59,110 @@ body {
     margin: 0 auto;
 }
 
-#portfolio{
+#portfolio {
     text-align: center;
 }
 
-#portfolio h2{
+#portfolio h2 {
     margin: 0px auto;
     border-bottom: 1px solid black;
-    width: 50%;
+    width: 25%;
 }
-
-
+#copy{
+    background-color: orangered;
+}
 @media screen and (max-width: 768px) {
     .principal {
-        margin-top: 10vh;
-        flex-direction: row;
+        margin-top: 8vh;
+        flex-direction: column;
     }
 
-    #imagenMono {
-        width: 25vh;
-        height: 25vh;
+    .imagenes {
+        width: 45%;
+        margin: 2%;
+    }
+
+    .mb-3 {
+        width: 60vh;
+        margin-left: 5vh;
+    }
+
+    .btn {
+        margin-left: 5vh;
     }
 }
 
 @media screen and (max-width: 480px) {
     .principal {
-        margin-top: 5vh;
-        flex-direction: row;
+        margin-top: 7vh;
+        flex-direction: column;
     }
 
-    #imagenMono {
-        width: 15vh;
-        height: 15vh;
+    .imagenes {
+        width: 70%;
+        margin: 2% auto;
+    }
+
+    .mb-3 {
+        width: 50vh;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    #portfolio h2 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .principal {
+        margin-top: 5vh;
+        flex-direction: column;
+    }
+
+    .imagenes {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .mb-3 {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    #portfolio h2 {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .principal {
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+
+    .imagenes {
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    .mb-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #portfolio h2 {
+        width: 90%;
     }
 }
